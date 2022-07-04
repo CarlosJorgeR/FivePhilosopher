@@ -1,13 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using FivePhilosophersProblem;
-var names = new string[5] {
+
+const int tableSize = 5;
+var names = new string[tableSize] {
     "Socrates",
     "Platon",
     "Sartre",
     "Kant",
     "Marx",
 };
-var colors = new ConsoleColor[5] {
+var colors = new ConsoleColor[tableSize] {
     ConsoleColor.Blue, ConsoleColor.Red,
     ConsoleColor.Yellow , ConsoleColor.Green,
     ConsoleColor.White
