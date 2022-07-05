@@ -32,7 +32,6 @@ namespace FivePhilosophersProblem
             {
                 philosopher.TakeLeftFork();
                 forkLeft_semaphore.WaitOne();
-                Thread.Sleep(100);
                 philosopher.TakeRigthFork();
                 forkRight_semaphore.WaitOne();
                 philosopher.Eat();

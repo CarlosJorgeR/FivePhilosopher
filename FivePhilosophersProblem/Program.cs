@@ -19,5 +19,5 @@ var philosophers = names.Select((name, index) =>
     index % names.Length,
     (index + 1) % names.Length,colors[index])).ToArray();
 
-IStrategyDinnerPhilosophers strategy = new SimpleStrategy();
+IStrategyDinnerPhilosophers strategy = new ByTurnStrategy();
 strategy.revolve(philosophers);
